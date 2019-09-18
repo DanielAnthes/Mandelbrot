@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script type = "text/javascript" src = "mandelbrot.js" ></script>
+</head>
+<body>
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <script>
+          var canvas  = document.getElementById('myCanvas');
+          registerCanvas(canvas);
+          fillCanvas();
+        </script>
+        <input id="mvleft" type="button" value="left" onclick="moveLeft(50);" />
+        <input id="mvright" type="button" value="right" onclick="moveRight(50);" />
+        <input id="mvup" type="button" value="up" onclick="moveUp(50);" />
+        <input id="mvdown" type="button" value="down" onclick="moveDown(50);" />
+        <input id="zoomout" type="button" value="zoom out" onclick="zoomOut(0.1);" />
+        <input id="zoomin" type="button" value="zoom in" onclick="zoomIn(0.1);" />
+</body>
+</html>
